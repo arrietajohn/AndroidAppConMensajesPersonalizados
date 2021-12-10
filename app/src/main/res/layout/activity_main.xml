@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorCoordinado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="ACTIVIDAD CON MENSAJES"
+            android:textColor="#0A870F"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMsjSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeSimple"
+            android:text="Mensaje Simple" />
+
+        <Button
+            android:id="@+id/btnMsjColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeColorido"
+            android:text="Mensaje Colorido" />
+        <Button
+            android:id="@+id/btnMsjError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeError"
+            android:text="Mensaje de Error" />
+
+        <Button
+            android:id="@+id/btnMsjWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeWarning"
+            android:text="Mensaje de Advertencia" />
+
+        <Button
+            android:id="@+id/btnMsjWSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeOk"
+            android:text="Mensaje Correcto" />
+
+        <Button
+            android:id="@+id/btnMsjConfianza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeOk2"
+            android:text="Mensaje de Confianza" />
+
+        <Button
+            android:id="@+id/btnMsjAccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeConAccion"
+            android:text="Mensaje con Accion" />
+
+        <Button
+            android:id="@+id/btnMsjEfectos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:onClick="mensajeAbrirPantalla"
+            android:text="Mensaje Con Efectos" />
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ACCION:"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
